@@ -1,6 +1,9 @@
 name: CI
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
@@ -36,12 +39,12 @@ jobs:
             echo "$file was changed"
           done
       - name: Get changed files and write the outputs to a JSON file
-          id: changed-files-write-output-files-json
-          uses: tj-actions/changed-files@v42
-          with:
-            json: true
-            write_output_files: true
+        id: changed-files-write-output-files-json
+        uses: tj-actions/changed-files@v42
+        with:
+          json: true
+          write_output_files: true
 
-              - name: Verify the contents of the .github/outputs/added_files.json file
-                run: |
-                  cat .github/outputs/added_files.json
+            - name: Verify the contents of the .github/outputs/added_files.json file
+              run: |
+                cat .github/outputs/added_files.json
