@@ -44,6 +44,6 @@ jobs:
         id: sync
         with:
           auth: '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'
-          gist_url: 'https://gist.github.com/aednikanov/43b5e18c740e18da1e467ab577cbb8d6'
-          gist_title: linea-openrpc.json
-          github_file: linea-openrpc.json
+          gist_url: 'https://gist.github.com/aednikanov/a7d0be0f7ce8e2e010e253a6c117954e'
+          gist_title: linea-openrpc-public.json
+          github_file: linea-openrpc-public.json
