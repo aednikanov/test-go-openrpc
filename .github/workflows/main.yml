@@ -42,7 +42,7 @@ jobs:
       - name: Deploy
         uses: exuanbo/actions-deploy-gist@v1
         with:
-          token: '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'
+          token: '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'
           gist_id: '43b5e18c740e18da1e467ab577cbb8d6'
           file_path: linea-openrpc.json
           file_type: binary
