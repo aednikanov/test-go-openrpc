@@ -33,18 +33,6 @@ jobs:
         uses: tj-actions/changed-files@v42
         with:
           files: |
-            **.go
-
-      - name: Run a step if data.go was modified
-        if: contains(steps.changed-files.outputs.modified_files, 'data.go')
+            data.go
         run: |
           echo "data.go file has been modified."
-      - name: Setup go
-        uses: actions/setup-go@v4
-        with:
-          go-version: 1.17
-          cache: false
-      - name: Verify go dependencies
-        run: go mod verify
-      - name: Run go script
-        run: go ./converter.go
