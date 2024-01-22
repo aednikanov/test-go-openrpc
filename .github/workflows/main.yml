@@ -28,9 +28,12 @@ jobs:
         with:
           fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
 
-      - name: Get changed files
+      - name: Get changed go files
         id: changed-files
         uses: tj-actions/changed-files@v42
+        with:
+          files: |
+            **.go
 
       - name: Run a step if data.go was modified
         if: contains(steps.changed-files.outputs.modified_files, 'data.go')
