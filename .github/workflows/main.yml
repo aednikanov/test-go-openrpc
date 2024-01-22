@@ -40,9 +40,10 @@ jobs:
         run: |
           echo "data.go file has been modified."
       - name: Deploy
-        uses: exuanbo/actions-deploy-gist@v1
+        uses: popsiclestick/gist-sync-action@v1.2.0
+        id: sync
         with:
-          token: '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'
-          gist_id: '43b5e18c740e18da1e467ab577cbb8d6'
-          file_path: linea-openrpc.json
-          file_type: binary
+          auth: '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'
+          gist_url: 'https://gist.github.com/aednikanov/43b5e18c740e18da1e467ab577cbb8d6'
+          gist_title: linea-openrpc.json
+          github_file: linea-openrpc.json
