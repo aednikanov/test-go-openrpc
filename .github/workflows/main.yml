@@ -36,6 +36,11 @@ jobs:
             data.go
         run: |
           echo "data.go file has been modified."
+
+      - name: Run a step if data.go was modified
+        if: contains(steps.changed-files.outputs.modified_files, 'data.go')
+        run: |
+          echo "data.go file has been modified."
       - name: Deploy
         uses: exuanbo/actions-deploy-gist@v1
         with:
