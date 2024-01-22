@@ -1,1 +1,1 @@
-# test-go-openrpc
+# go-openrpc
