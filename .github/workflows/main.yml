@@ -44,5 +44,5 @@ jobs:
         with:
           token: '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'
           gist_id: '43b5e18c740e18da1e467ab577cbb8d6'
-          file_path: test.json
+          file_path: linea-openrpc.json
           file_type: text
