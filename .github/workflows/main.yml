@@ -39,3 +39,5 @@ jobs:
         if: contains(steps.changed-files.outputs.modified_files, 'data.go')
         run: |
           echo "data.go file has been modified."
+      - name: Setup go
+              uses: actions/setup-go@v4
