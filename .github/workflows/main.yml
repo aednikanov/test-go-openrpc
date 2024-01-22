@@ -33,6 +33,6 @@ jobs:
         uses: tj-actions/changed-files@v42
 
       - name: Run a step if my-file.txt was modified
-        if: contains(steps.changed-files.outputs.modified_files, 'my-file.txt')
+        if: contains(steps.changed-files.outputs.modified_files, 'data.go')
         run: |
-          echo "my-file.txt file has been modified."
+          echo "data.go file has been modified."
