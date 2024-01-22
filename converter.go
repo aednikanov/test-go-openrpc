@@ -99,7 +99,9 @@ import (
     "encoding/json"
     "fmt"
     "io/ioutil"
-    "strconv"
+    "strconv",
+    "os",
+    "log"
 )
 
 type j struct {
