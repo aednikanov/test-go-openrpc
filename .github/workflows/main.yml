@@ -39,9 +39,3 @@ jobs:
         if: contains(steps.changed-files.outputs.modified_files, 'data.go')
         run: |
           echo "data.go file has been modified."
-      - name: Gist Repo Sync
-        uses: pentatonicfunk/action-gist-repo-sync@v1
-        with:
-          gist_token: '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'
-          gist_id: 'https://gist.github.com/aednikanov/a7d0be0f7ce8e2e010e253a6c117954e'
-          source_path: './linea-openrpc-public.json'
