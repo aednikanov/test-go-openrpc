@@ -41,3 +41,5 @@ jobs:
           echo "data.go file has been modified."
       - name: Setup go
         uses: actions/setup-go@v4
+      - name: Verify go dependencies
+        run: go mod verify
